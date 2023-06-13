@@ -1,0 +1,22 @@
+.kanban-board-footer {
+    background: #0067A3;
+    width: 100%;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+}
+@media (max-width: 768px) {
+    .kanban-board-footer {
+        display: none;
+    }
+}
+
+.kanban-board-footer-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 20px;
+}
+
+.kanban-board-active-task{
+    margin-right: 36px;
+}

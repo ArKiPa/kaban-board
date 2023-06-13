@@ -1,0 +1,119 @@
+.kanban-board-header {
+    background: #0067A3;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .kanban-board-header {
+        background: #0079BF;
+    }
+}
+
+.kanban-board-header-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 20px;
+}
+@media (max-width: 768px) {
+    .kanban-board-header-block {
+        justify-content: end;
+    }
+}
+
+.kanban-board-name {
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+@media (max-width: 768px) {
+    .kanban-board-name  {
+        display: none;
+    }
+}
+
+.header-menu {
+    position: relative;
+}
+
+.header-menu-button {
+    background: none;
+    border-width: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50px;
+    height: 30px;
+    margin-right: 13px;
+}
+
+.header-user-avatar-check {
+    position: relative;
+}
+
+.header-user-avatar-icon {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.header-user-avatar-check:before {
+    content: '';
+    position: absolute;
+    top: 0px; 
+    left: -4px;   
+    width: 8px;
+    height: 2px;
+    background: white;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);    
+}
+
+.header-user-avatar-check::after {
+    content: '';
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    width: 8px;
+    height: 2px;
+    background: white;
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+    opacity: 1;        
+}
+
+.header-user-avatar-check-active {
+    transform: rotate(180deg);
+    margin-left: 13px;
+}
+
+.kanban-board-header-menu {
+    position: absolute;
+    right: 0px;
+    top: 43px;
+    width: 134px;
+    height: 60px;
+    background-color: white;
+    z-index: 1;
+}
+
+.kanban-board-header-menu-active {
+    display: none;
+}
+
+.header-menu-triangle {
+    position: absolute;
+    right: 25%;
+    top: -17px;
+    border: 9px solid transparent;
+    border-bottom: 9px solid white;
+    background-color: none;
+}
+
+.header-menu-item {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 8px;
+}
+
+.header-menu-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

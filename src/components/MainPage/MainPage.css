@@ -1,0 +1,15 @@
+.kanban-board-main {
+    background: #0079BF;;
+    width: 100%;
+}
+
+.kanban-board-main-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .kanban-board-main-block {
+        display: block;
+    }
+}
