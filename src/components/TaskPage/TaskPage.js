@@ -6,7 +6,6 @@ function buttonEdit(button, textId, textArea) {
   if (button.textContent==='Редактировать') {
     document.querySelector('.task-details-text').removeAttribute('disabled')
     button.textContent='Сохранить'
-    console.log(button.textContent)
   } else {
     button.textContent = 'Редактировать' 
     document.querySelector('.task-details-text').setAttribute('disabled', null) 
